@@ -10,7 +10,7 @@
 ![OpenAI embeddings](https://img.shields.io/badge/OpenAI-text--embedding--3--small-412991?logo=openai&logoColor=white)
 ![RAG](https://img.shields.io/badge/pattern-RAG-16A34A)
 
-**JHU GenAI & Agentic AI — Project 2** · Low-Code track · built in Google Colab
+**An independent RAG systems project** · built in JHU's GenAI & Agentic AI program
 
 ### 📂 What to look at
 - **[`research_proposal_rag.ipynb`](research_proposal_rag.ipynb)** — the executed notebook (prompts + code + outputs). *GitHub renders it in your browser — no setup needed.*
