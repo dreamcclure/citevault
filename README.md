@@ -1,4 +1,4 @@
-# AI for Research Proposal Automation — RAG Pipeline
+# CiteVault — A Grounded Retrieval-Augmented Generation (RAG) & Document Synthesis Pipeline
 
 > A Retrieval-Augmented Generation (RAG) system that helps a university research office turn a
 > federal **Notice of Funding Opportunity (NOFO)** into a first-draft grant concept note — a task
@@ -10,10 +10,10 @@
 ![OpenAI embeddings](https://img.shields.io/badge/OpenAI-text--embedding--3--small-412991?logo=openai&logoColor=white)
 ![RAG](https://img.shields.io/badge/pattern-RAG-16A34A)
 
-**An independent RAG systems project** · built in JHU's GenAI & Agentic AI program
+**An independent RAG systems project**
 
 ### 📂 What to look at
-- **[`research_proposal_rag.ipynb`](research_proposal_rag.ipynb)** — the executed notebook (prompts + code + outputs). *GitHub renders it in your browser — no setup needed.*
+- **[`citevault.ipynb`](citevault.ipynb)** — the executed notebook (prompts + code + outputs). *GitHub renders it in your browser — no setup needed.*
 - **[`Research_Proposal_First_Draft.pdf`](Research_Proposal_First_Draft.pdf)** — the AI-generated 10-page concept note (the deliverable).
 
 ---
@@ -39,7 +39,7 @@ flowchart TD
 
 **Extracted funding topic:** *“Digital mental health interventions”*
 **Advisory rubric score:** Innovation **4** · Significance **4** · Approach **3** · Investigator Expertise **1\*** · Overall **3**
-<sub>\*Scored 1 *honestly* — a concept note contains no investigator biosketches, so the evaluator flagged "insufficient info" rather than inventing qualifications.</sub>
+<sub>\*Scored 1 *by design* — a concept note contains no investigator biosketches, so the evaluator flagged "insufficient info" rather than inventing qualifications.</sub>
 
 ## 📄 The generated deliverable
 
@@ -92,7 +92,7 @@ has to be tagged by hand.
 
 ## Responsible-AI guardrails (and proof they worked)
 - The draft **did not** fabricate a budget, results, or investigator credentials.
-- Weak/off-topic papers were honestly summarized as having **"indirect relevance."**
+- Weak/off-topic papers were summarized as having **"indirect relevance"** — not overstated.
 - The evaluator scored Investigator Expertise a **1 with an explicit note** that a concept note simply
   contains no biosketches — *not* a claim the investigators are unqualified.
 - The whole tool stops at an **internal first draft**; faculty + grants office make the real call.
@@ -116,7 +116,7 @@ has to be tagged by hand.
 
 ## Running it yourself
 This project was built and run in **Google Colab**. To reproduce:
-1. Open `research_proposal_rag.ipynb` in Colab (or Jupyter).
+1. Open `citevault.ipynb` in Colab (or Jupyter).
 2. Install dependencies — `pip install -r requirements.txt` (versions pinned from the original run).
 3. Provide an OpenAI-compatible API key (and base URL, if using a gateway) when prompted — **never
    hard-code it**.
